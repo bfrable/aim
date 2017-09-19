@@ -1,0 +1,70 @@
+.hero {
+    color: $white;
+    padding: 25px 0;
+
+    @include min-screen($tablet) {
+        padding: 100px 100px 150px;        
+    }
+
+    &--hp {
+        text-align: center;
+    }
+
+    &--int {
+        text-align: center;
+        @include max-screen($tablet) {
+            padding: 50px 0;            
+        }
+    }
+
+    &__heading {
+        font-size: 28px;
+
+        @include max-screen($tablet) {
+            padding: 0 23px;
+        }
+
+        @include min-screen($tablet) {
+            font-size: 44px;
+        }
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__sub-heading {
+        color: $white;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 5px;
+
+        @include max-screen($tablet) {
+            white-space: nowrap;
+            letter-spacing: 3px;
+        }
+    }
+
+    .button {
+        margin: 30px auto 65px;
+
+        @include max-screen($tablet) {
+            margin: 25px auto 50px;
+        }
+    }
+
+    .featured-in-logos {
+        margin: 25px auto 0;
+        max-width: 573px;
+        text-align: center;
+        width: 100%;
+
+        @include max-screen($tablet) {
+            margin: 0 0 50px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

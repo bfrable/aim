@@ -1,0 +1,81 @@
+.preorder {
+    h2 {
+        color: #192B35;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        margin: 10px 0 0;
+    }
+
+    h3 {
+        color: #192B35;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 44px;
+    }
+
+    h4 {
+        color: #2E4857;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .7px;
+    }
+
+    p {
+        color: #2E4857;
+        line-height: 27px;
+        margin: 15px 0 20px;
+    }
+
+
+    span {
+        color: #2E4857;
+    }
+
+    input {
+        border-radius: 5px;
+        box-shadow: none;
+        height: 50px;
+        margin: 10px 0 20px;        
+        padding: 0 20px;
+    }
+    
+    .button {
+        background: $teal2 !important;
+        margin: 0;
+
+        &:hover {
+            background: $teal !important;
+        }
+    }
+
+    .author {
+        display: inline-block;
+        margin: 5px 0 25px;
+    }
+
+    @include max-screen($tablet) {
+
+        .wrapper > .row > {
+            .columns + .columns {
+                float: none;
+                width: auto;
+            }
+        }
+        
+        h2 {
+            font-size: 28px;
+            line-height: 31px;
+            text-align: left !important;
+        }
+
+        h3 {
+            font-size: 18px;
+            line-height: 31px;
+        }
+
+        .button {
+            max-width: 100%;
+        }
+    }
+}

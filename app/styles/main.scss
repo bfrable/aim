@@ -1,0 +1,261 @@
+// bower:scss
+@import "bower_components/foundation-sites/scss/foundation.scss";
+@import "bower_components/sass-mediaqueries/_media-queries.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
+// endbower
+
+@import "bower_components/slick-carousel/slick/slick-theme.scss";
+
+@include foundation-everything;
+
+// Vars 
+
+$blue: #2E4857;
+$teal: #089794;
+$teal2: #0DB1AE;
+$cream: #FBF5EE;
+$nav-link: #3D4D56;
+$font-size-sm: 15px;
+$tablet: 40em;
+
+
+@import "global/helpers";
+@import "global/mixins";
+
+@import "components/logo";
+@import "components/navigation";
+@import "components/hero";
+@import "components/buttons";
+@import "components/mission-statement";
+@import "components/featured-image";
+@import "components/newsletter";
+@import "components/slick";
+@import "components/preorder";
+@import "components/hamburger";
+@import "components/associates";
+@import "components/client-list";
+
+@import "layouts/header";
+@import "layouts/footer";
+
+// Base Styles
+
+body {
+  font-family: 'Open Sans', sans-serif;  
+}
+
+a {
+  color: $teal;
+  font-family: 'Open Sans', sans-serif;
+  &:hover {
+    color: #099997;
+  }  
+}
+
+h2 {
+  color: $blue;
+
+  @include max-screen($tablet) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: inherit;
+  margin: 0;
+
+  @include max-screen($tablet) {
+    font-size: 16px;
+  }
+}
+
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: inherit;
+  margin: 0;
+
+  @include max-screen($tablet) {
+    font-size: 16px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 36px;
+  margin: 0 0 30px;
+
+  @include max-screen($tablet) {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0 0 15px;
+  }
+
+  a {
+    font-weight: 600;
+  }
+}
+
+main {
+  .row {
+    margin: 0 0 30px;
+  }
+
+  .button {
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 36px;
+    @include max-screen($tablet) {
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+
+  p + .button {
+    @include max-screen($tablet) {
+      margin-top: 30px !important;      
+      margin: 30px auto 0 !important;
+    }
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 990px;
+  width: 100%;
+}
+
+section {
+  padding: 55px 0;  
+
+  @include max-screen($tablet) {
+    padding: 25px 0;
+  }
+}
+
+.grey {
+  background: #E4E8E7;
+}
+
+.cream {
+  background: $cream;
+}
+
+.has-background {
+  color: $white;
+}
+
+.signature {
+  margin: 20px 0;
+  max-width: 250px;
+  width: 100%;
+}
+
+// Quote Box Component
+.quote-box {
+  // padding: 110px 0;
+  padding: 55px 0;  
+  text-align: center;
+
+  @include max-screen($tablet) {
+    padding: 25px 0;
+  }
+  
+
+  &__inner {
+    // border: 1px solid $white;
+    padding: 50px 30px 0;
+
+    @include max-screen($tablet) {
+      padding: 0px 10px 0;
+    }
+  }
+
+  &__author, &__title {
+    display: block;
+    line-height: 25px;
+    text-align: center;    
+  }
+
+  &__author {
+    font-size: 23px;
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 50px;
+
+    @include max-screen($tablet) {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+}
+
+// Testimonial Component
+.testimonials {
+
+  .testimonial {
+    overflow: auto;
+    padding: 0 60px;
+    position: relative;
+
+    @include max-screen($tablet) {
+      padding: 0 20px;
+    }
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      height: 60px;
+      position: absolute;
+      width: 30px;
+    }
+
+    &:before {
+      background: transparent url('../images/quote-open.png') 0 0 no-repeat;
+      background-size: 92%;
+      left: 0;
+      top: 0;
+    }
+
+    &:after {
+      background: transparent url('../images/quote-close.png') 0 0 no-repeat;
+      background-size: 92%;
+      bottom: 60px;
+      right: 0;
+    }
+
+    &__author, &__content {
+      font-size: 18px;
+
+      @include max-screen($tablet) {
+        font-size: 16px;
+      }
+    }
+   
+    &__author {
+      color: rgba(0,0,0,0.5);
+      margin: 0;
+    }
+
+    .slick-slider {
+      margin-bottom: 0;
+    }    
+  }
+
+  .slick-dots {
+    bottom: -50px;
+  }
+
+}

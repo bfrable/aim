@@ -1,0 +1,74 @@
+.h {
+    &-text-center {
+        text-align: center;
+    }
+
+    &-text-divider {
+        margin-bottom: 80px;
+        &:after {
+            content: '';
+            display: block;
+            background: #2E4857;
+            height: 6px;
+            margin: 30px auto;
+            width: 75px;
+        }
+    }
+
+    &-text-bold-less {
+        font-weight: 700 !important;
+    }
+
+    &-text-bold {
+        font-weight: 900 !important;
+    }
+
+    &-text-center {
+        text-align: center;
+    }
+
+    &-small-line-height {
+        line-height: 24px;
+    }
+
+    &-overflow-hidden {
+        overflow: hidden;
+    }
+    
+    &-more-link {
+        font-weight: 700;
+        @include max-screen($tablet) {
+            display: block;
+        }
+    }
+
+    &-margin-top-20 {
+        margin-top: 20px;
+    }
+
+    &-margin-top-10 {
+        margin-top: 10px;
+    }
+
+    &-padding-bottom-20 {
+        padding-bottom: 20px !important;
+    }
+
+    &-mobile-text-center {
+        @include max-screen($tablet) {
+            text-align: center;
+        }
+    }
+
+    &-no-margin {
+        margin: 0 !important;
+    }
+
+    &-img-small {
+        max-width: 65px;
+    }
+
+    &-no-float {
+        float: none !important;
+    }
+}

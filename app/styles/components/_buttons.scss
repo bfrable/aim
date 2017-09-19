@@ -1,0 +1,32 @@
+.button {
+    border-radius: 68px;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 17px 10px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &--teal {
+        background: $teal;
+
+        &:hover {
+            background: #068481;
+        }
+    }
+
+    &--fixed-width {
+        margin: 0 auto;
+        max-width: 370px;
+        width: 100%;
+
+        @include max-screen($tablet) {
+            max-width: 305px;
+        }    
+    }
+
+    &--inline {
+        display: inline;
+        padding: 17px 60px;        
+    }
+}

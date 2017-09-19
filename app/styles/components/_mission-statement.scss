@@ -1,0 +1,69 @@
+.mission-statement {
+    background: $blue;
+    border-radius: 370vh 370vh 0vh 0vh / 20vh  20vh 0vh 100vh;
+    color: $white;
+    font-size: 28px;
+    margin: -50px 0 0;
+    padding: 90px 0;
+    text-align: center;
+
+    @include max-screen($tablet) {
+        padding: 30px 10px;
+        margin: -15px 0 0;
+    }
+
+    &__inner {
+        border: 2px solid $white;
+        line-height: 50px;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 80px 75px;
+
+        @include max-screen($tablet) {
+            border: 0;
+            font-size: 22px;
+            line-height: 30px;
+            padding: 0;
+            text-align: left;
+        }   
+    }
+
+    .button {
+        margin-top: 40px;
+
+        @include max-screen($tablet) {
+            margin-top: 30px;
+        }
+    }
+
+    &--teal {
+        background: #089794;
+    }
+
+    &--white {
+        background: $white;
+
+        .mission-statement__text {
+            color: $black;
+        }
+    }
+
+    &--gray {
+        background: #F2F2F2;
+    }
+
+    &__text {
+        h2 {
+            font-size: 36px;
+
+            @include max-screen($tablet) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .testimonial__content {
+        color: $black;
+    }
+}

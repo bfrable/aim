@@ -1,0 +1,41 @@
+.associate {
+    
+    &__image {
+        position: relative;        
+        &:before {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            display: block;
+            background: #81C1BF;
+            z-index: -1;
+            top: -10px;
+            right: 5px;
+        }
+    }
+
+    &__name {
+        font-size: 18px;
+
+        span {
+            margin: 0 10px 0 0;
+        }
+
+        .social-media {
+            margin: 0 0 0 15px;
+        }
+
+        .fa-twitter {
+            color: #1DA1F2;
+        }
+
+        .fa-linkedin {
+            color: #0073B2;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+    }
+}

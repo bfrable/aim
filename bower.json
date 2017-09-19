@@ -1,0 +1,17 @@
+{
+  "name": "aim",
+  "private": true,
+  "dependencies": {
+    "foundation-sites": "~6.0.5",
+    "animate.css": "animate-css#^3.5.2",
+    "waypoints": "^4.0.1",
+    "sass-mediaqueries": "^1.6.1",
+    "slick-carousel": "slick.js#^1.7.1",
+    "jquery-sticky": "sticky#^1.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "waypoints": "^4.0.1"
+  }
+}

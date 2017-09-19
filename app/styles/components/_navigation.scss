@@ -1,0 +1,45 @@
+nav {
+    overflow: auto;
+    &.main-navigation {
+        list-style: none;
+        float: right;
+
+        @include max-screen($tablet) {
+            display: none;
+        }
+        ul {
+            margin: 0;
+        }
+        li {
+            display: inline-block;
+            
+            a {
+                @include transition(color .2s);
+                color: $nav-link;
+                display: inline-block;
+                font-size: $font-size-sm;
+                padding: 37px 45px 37px 0;
+                &:hover {
+                    color: $teal;
+                }
+            }
+
+            &:last-child {
+                a {
+                    padding: 0;
+                }
+            }
+
+        }
+    }
+}
+
+.menu-toggle {
+    display: none;
+    width: 30%;
+    float: right;
+
+    @include max-screen($tablet) {
+        display: block;
+    }
+}

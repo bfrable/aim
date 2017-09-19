@@ -1,0 +1,62 @@
+footer {
+    background: #2E4857;
+    padding: 40px 0;
+
+    a {
+        color: $white;
+        font-size: 25px;
+    }
+
+    .footer-text {
+        color: $white;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        
+        .button {
+            font-weight: 900;
+            margin: 0 0 0 20px;
+
+            @include max-screen($tablet) {
+                display: block;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .socmed {
+        list-style-type: none;
+        margin: 60px 0 0;
+
+        @include max-screen($tablet) {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            line-height: 25px;
+            margin: 0 25px;
+
+            a {
+                font-size: 30px;
+            }
+        }
+    }
+
+    nav.main-navigation ul {
+        @include max-screen($tablet) {
+            text-align: center;
+        }
+    }
+
+    nav.main-navigation a {
+        color: $white;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        @include max-screen($tablet) {
+            padding: 5px 25px;
+        }
+    }
+}

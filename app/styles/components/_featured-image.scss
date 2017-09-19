@@ -1,0 +1,26 @@
+.featured-image {
+    margin: 50px 0 0;
+    position: relative;
+    opacity: 0;
+
+    @include max-screen($tablet) {
+        display: none;
+    }
+    
+    &:before {
+        background: #2E4857;
+        content: "";
+        display: block;
+        height: 90%;
+        left: 28%;
+        position: absolute;
+        top: -28px;        
+        width: 70%;
+    }
+
+    img {
+        max-width: 350px;
+        position: relative;
+        width: 100%;
+    }
+}

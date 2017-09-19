@@ -1,0 +1,26 @@
+.client-list {
+    margin: 55px 0 0;
+    li {
+        height: 150px;
+        list-style: none;
+        margin: 0 0 20px;
+        padding: 0 10px;
+
+        &:hover {
+            .client-icon {
+                background: #f2f2f2;
+            }
+        }
+    }
+
+    .client-icon {
+        @include transition(all .5s);        
+        background: #F5F5F5;
+        height: 150px;
+        padding: 0 30px;
+    }
+
+    img {
+        @include vertical-align();
+    }
+}

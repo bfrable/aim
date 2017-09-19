@@ -1,0 +1,7 @@
+.mast-head {
+    background: $white;
+    z-index: 9 !important;
+    @include max-screen($tablet) {
+        padding: 20px 0 10px;
+    }
+}
